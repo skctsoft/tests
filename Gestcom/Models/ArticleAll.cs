@@ -53,7 +53,7 @@ namespace Gestcom.Models
             //var lstArticleFiltree = new ObservableCollection<Article>(lstArticle.Select(p => p.Prixhtva>2 ));
             var matchingArticles = new ObservableCollection<Article>(lstArticle.Where(d => d.Libelle.Contains(this.LibelleArticleFiltre)));
             SelectedArticle = lstArticle[0];
-            Debug.WriteLine("getAllArticles() : this.LibelleArticleFiltre vaut : {0}", this.LibelleArticleFiltre);
+            //Debug.WriteLine("getAllArticles() : this.LibelleArticleFiltre vaut : {0}", this.LibelleArticleFiltre);
 
             return matchingArticles; // lstArticle;
         }
@@ -121,8 +121,8 @@ namespace Gestcom.Models
         }
         private void FiltreArticleLibelle()
         {
-            Debug.WriteLine("Filtrer le libelle ICI !");
-            OcArticle = null;
+            //Debug.WriteLine("Filtrer le libelle ICI !");
+            OcArticle = null;  // DECHLENCHERA LE RAPPEL DE L'INITIALISATION DE LA LISTE via getAllArticles();
 
         }
         //void ArticleLibelle_Filter(object sender, FilterEventArgs e)

@@ -9,7 +9,7 @@
     <Grid DataContext="{Binding Source={StaticResource ARALL}}">
         <DataGrid x:Name="GridArticle" HorizontalAlignment="Left" Margin="22,38,0,0" VerticalAlignment="Top" Height="239" Width="610" ItemsSource="{Binding Path=OcArticle}" SelectedItem="{Binding SelectedArticle}" />
         <TextBox x:Name="txFiltreLibelle" HorizontalAlignment="Left" Height="23" Margin="102,10,0,0" TextWrapping="Wrap" Text="{Binding LibelleArticleFiltre}" VerticalAlignment="Top" Width="120" />
-        <Button x:Name="btnFiltreLibelle" Content="Filtrer" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Width="82" Command="{Binding FiltreCommand}"/>
+        <Button x:Name="btnFiltreLibelle" Content="Filtrer sur le Libelle" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Width="119" Command="{Binding FiltreCommand}"/>
         <!--
         <ComboBox DataContext="{Binding Source={StaticResource AllPF}}" Grid.Row="3" Grid.Column="3"  ItemsSource="{Binding Path=Items}" SelectedItem="{Binding Path=SelectedItem}">
         -->

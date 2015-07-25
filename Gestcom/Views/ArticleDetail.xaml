@@ -16,5 +16,6 @@
         <Button x:Name="btnLast" Content="Dernier" HorizontalAlignment="Left" Margin="300,185,0,0" VerticalAlignment="Top" Width="75" Command="{Binding LastCommand}"/>
         <TextBlock HorizontalAlignment="Left" Margin="51,237,0,0" TextWrapping="Wrap" Text="{Binding Path=SelectedArticle.Libelle}" VerticalAlignment="Top" Height="27" Width="156"/>
         <myuc:ListeArticles RenderTransformOrigin="0.495,0.537" Margin="426,10,10,125"></myuc:ListeArticles>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="132,132,0,0" TextWrapping="Wrap" Text="{Binding SelectedArticle.PrixHtva}" VerticalAlignment="Top" Width="200"/>
     </Grid>
 </Window>

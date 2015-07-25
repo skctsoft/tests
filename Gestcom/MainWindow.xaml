@@ -22,5 +22,6 @@
         <Label Content="{Binding ElementName=GridArticle, Path=SelectedItem.Id}" HorizontalAlignment="Left" Margin="22,269,0,0" VerticalAlignment="Top" Width="128"/>
         <Button x:Name="btnArticleDetail" Content="Article Détail" HorizontalAlignment="Left" Margin="653,88,0,0" VerticalAlignment="Top" Width="245" Click="btnArticleDetail_Click"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="389,295,0,0" TextWrapping="Wrap" Text="{Binding SelectedItem.Refnum, ElementName=GridArticle}" VerticalAlignment="Top" Width="243" />
+        <Button x:Name="btnQuitter" Content="Quitter l'application" HorizontalAlignment="Left" Margin="653,279,0,0" VerticalAlignment="Top" Width="245" Click="btnQuitter_Click"/>
     </Grid>
 </Window>

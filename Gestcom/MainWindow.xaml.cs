@@ -21,14 +21,13 @@ namespace Gestcom
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window                    //, INotifyPropertyChanged
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
 
             ArticleAll aa = new ArticleAll();
-            //this.DataContext = aa; //.OcArticle;
             this.DataContext = aa;
         }
 
@@ -36,6 +35,11 @@ namespace Gestcom
         {
             ArticleDetail arti_detail = new ArticleDetail();
             arti_detail.ShowDialog();
+        }
+
+        private void btnQuitter_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
     }
